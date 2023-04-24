@@ -132,9 +132,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.task-list_li > * {
   vertical-align: middle;
 }
 
@@ -142,7 +139,7 @@
   margin: 0 10px;
 }
 
-.task-list_li > label {
+.task-list_label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
@@ -153,13 +150,13 @@
   width: 226px;
 }
 
-.task-list_butt-delete img {
+.delete-image{
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.task-list_butt-delete img:hover {
+.delete-image:hover {
   transform: rotateZ(0);
 }
 
@@ -176,11 +173,11 @@
   display: none;
 }
 
-.task-list .edit-mode input[type=text] {
+.edit-mode .task-list_add-text {
   display:inline-block;
   width: 224px;
 }
 
-.task-list .edit-mode label {
+.edit-mode .task-list_label {
   display: none;
 }
